@@ -245,6 +245,8 @@ To visualize the scaling improvement, please plot **2 figures** of the 2
 performance metrics separately. A figure plot helper file can be found
 in `project/plot.py`. A sample figure is shown below. Please save the figures in the directory
 `submit_figures`.
+You will receive full points if you can achieve at least 1.5x speedup 
+(training time reduction and throughput improvement) on 2 GPUs.
 
 Training Time | Tokens Per Second
 --- | ---
@@ -370,6 +372,7 @@ You should construct `nn.Sequential` using `GPT2Block` modules. Notice that each
 To visualize the scaling improvement, please plot **2 figures** of the 2
 performance metrics separately. A sample figure is shown below. Please save the figures in the directory
 `submit_figures`.
+You will receive full points if you can achieve faster training time and higher throughput with pipeline parallelism than model parallelism.
 
 Training Time | Tokens Per Second
 --- | ---

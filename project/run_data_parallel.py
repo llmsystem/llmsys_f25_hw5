@@ -62,7 +62,7 @@ def run_dp(
     ### Distributed Training Setup
     setup(rank, world_size, backend)
     
-    model = GPT2LMHeadModel(config=config).to(rank)
+    model = GPT2LMHeadModel.from_pretrained('gpt2').to(rank)
     
     optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate)
 

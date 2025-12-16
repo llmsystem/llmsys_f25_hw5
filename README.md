@@ -167,7 +167,7 @@ Hint:
     `torch.distributed` to init the process group
 
 2.  In the `main` section, you can use `Process` from
-    `torch.distributed` to define the process
+    `torch.multiprocessing` to define the process
 
 3.  We define the number of processes as `world_size`
 
